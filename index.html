@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJ VS KOFO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-900">
+  <div class="min-h-screen flex flex-col md:flex-row">
+    <div
+      class="flex-1 bg-red-900/30 p-8 flex flex-col items-center justify-center gap-4 transition-all hover:bg-red-900/40">
+      <img src="https://pbs.twimg.com/profile_images/1787498857527435264/qebxW3z-_200x200.jpg" alt="@ayokxnle"
+        class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-red-500 shadow-lg shadow-red-500/50 mb-4 object-cover" />
+      <div class="text-red-500 text-4xl md:text-6xl font-bold">AJ</div>
+      <div class="text-red-400 text-xl md:text-2xl">
+        Odds: <span class="font-bold">2.8x</span>
+      </div>
+    </div>
+
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+      <button id="betButton"
+        class="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded-full shadow-lg transform transition-all hover:scale-105 active:scale-95">
+        PLACE BET
+      </button>
+    </div>
+
+    <div
+      class="flex-1 bg-blue-900/30 p-8 flex flex-col items-center justify-center gap-4 transition-all hover:bg-blue-900/40">
+      <img src="https://pbs.twimg.com/profile_banners/717048519631183872/1695365706/600x200" alt="@kofookesola"
+        class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-red-500 shadow-lg shadow-red-500/50 mb-4 object-cover" />
+      <div class="text-blue-500 text-4xl md:text-6xl font-bold">KOFO</div>
+      <div class="text-blue-400 text-xl md:text-2xl">
+        Odds: <span class="font-bold">1.6x</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('betButton').addEventListener('click', () => {
+      alert('Stripe payment integration will be added here');
+    });
+  </script>
+</body>
+
+</html>
